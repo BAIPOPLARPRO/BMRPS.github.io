@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的论文标题 - 项目主页</title>
+    <style>
+        /* 极简学术风格 CSS */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fcfcfc;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 0.2em;
+            color: #111;
+        }
+        .authors {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .affiliations {
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .links {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 16px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        .links a:hover {
+            background-color: #024ea4;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        .abstract {
+            text-align: justify;
+            font-size: 1.05em;
+            background-color: #f6f8fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 论文标题 -->
+    <h1>你的论文英文标题 (Your Paper Title)</h1>
+
+    <!-- 2. 作者与机构 -->
+    <div class="authors">
+        <strong>作者一</strong><sup>1</sup>, <strong>作者二</strong><sup>2</sup>, <strong>作者三</strong><sup>1</sup>
+    </div>
+    <div class="affiliations">
+        <sup>1</sup> 你的大学/实验室名称 &nbsp;&nbsp; <sup>2</sup> 你的合作机构
+    </div>
+
+    <!-- 3. 外部链接按钮 (按需修改或删除) -->
+    <div class="links">
+        <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">📄 arXiv 论文</a>
+        <a href="https://github.com/你的用户名/你的仓库名" target="_blank">💻 GitHub 代码</a>
+        <a href="你的视频链接" target="_blank">🎥 演示视频</a>
+    </div>
+
+    <!-- 4. 核心摘要 -->
+    <h2>摘要 (Abstract)</h2>
+    <div class="abstract">
+        <p>
+            在这里粘贴你的论文摘要。这段文字会自动两端对齐，带有轻微的灰色背景，看起来非常学术和清爽。
+            你可以用一段话概括你的研究动机、方法创新和实验结果。
+        </p>
+    </div>
+
+    <!-- 5. 核心效果图展示 -->
+    <h2>核心框架 (Method Overview)</h2>
+    <div class="image-container">
+        <!-- 把图片命名为 framework.png 放在同一目录下，这里就能直接读取 -->
+        <img src="framework.png" alt="论文框架图">
+        <div class="caption">图 1：本方法的整体系统框架图。</div>
+    </div>
+
+    <div class="image-container">
+        <!-- 如果你有真机视频的截图，也可以放这里 -->
+        <img src="result.png" alt="真机实验效果">
+        <div class="caption">图 2：在真实世界复杂地形中的部署效果。</div>
+    </div>
+
+    <!-- 6. 致谢或引用 -->
+    <h2>引用 (Citation)</h2>
+    <pre><code>
+@article{yourname2026paper,
+  title={Your Paper Title},
+  author={Author One, Author Two},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2026}
+}
+    </code></pre>
+
+</body>
+</html>
